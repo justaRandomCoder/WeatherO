@@ -1,8 +1,8 @@
 class Forecast{
     constructor(){
         this.key = 'SJjylG4m8rVANhCkf8ViewfGLeGeOZKB';
-        this.baseURLCity = 'http://dataservice.accuweather.com/locations/v1/cities/search'
-        this.baseURLWeather = 'http://dataservice.accuweather.com/currentconditions/v1/'
+        this.baseURLCity = 'https://dataservice.accuweather.com/locations/v1/cities/search'
+        this.baseURLWeather = 'https://dataservice.accuweather.com/currentconditions/v1/'
     }
     async getCity(city){
         const query = `?apikey=${this.key}&q=${city}`
